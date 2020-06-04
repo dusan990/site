@@ -1,0 +1,34 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+<main id="main">
+	<section class="photo">
+		<div class="container">
+			<div class="flex">
+				<img src="./assets/photo/tiny/DSCF0290a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF3481braw.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF5419v.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF5421a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF5456a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF5582a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9662a.jpg" alt="">
+			</div>
+			<div class="flex">
+				<img src="./assets/photo/tiny/DSCF5605a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF5630a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9050a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF6353a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF6432a copy.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF6590a.jpg" alt="">
+			</div>
+			<div class="flex">
+				<img src="./assets/photo/tiny/DSCF8954a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9029a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9097a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9104a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9492a.jpg" alt="">
+				<img src="./assets/photo/tiny/DSCF9652a.jpg" alt="">
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock %}

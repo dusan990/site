@@ -1,0 +1,9 @@
+<footer id="footer">
+	<h1>Got a project in mind?</br> Let’s work together.</h1>
+
+	<a href="mailto:dusanzivanovic990@gmail.com">dusanzivanovic990@gmail.com</a>
+	
+	<a class="logo" href="index.html">	
+		<img src="./assets/logo-circle.svg">
+	</a>
+</footer>

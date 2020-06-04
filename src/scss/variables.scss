@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Font;
+	src: local("Font"),
+		url(../assets/Font.otf);
+	font-weight: 400;
+}
+
+$breakpoints: (
+	"mobile": 800px,
+	"tablet": 1024px,
+	"laptop": 1440px
+	);
+	
+	@mixin media($width, $type: max) {
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+$gray: #7F7F7F;
+$font: "Font", sans-serif;
+$Helvetica: "Helvetica", sans-serif;
+$spaceHorizontal: 4vh;
+$spaceVertical: 12vh;

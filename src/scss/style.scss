@@ -1,0 +1,377 @@
+@import 'reset';
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    background-color: #F6F6F6;
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    
+    @include media('mobile') {
+        font-size: 1.7rem;
+    }
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+p {
+    font-family: $font;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0;
+    
+    @include media('mobile') {
+        font-size: 0.9rem;
+    }
+}
+
+a {
+    font-family: $font;
+    text-decoration: underline;
+    color: black;
+    font-weight: 800;
+    font-size: 1rem;
+
+    @include media('mobile') {
+        font-size: 0.9rem;
+    }
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: none;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    li {
+        list-style-type: none;
+        font-weight: 200;
+        font-variation-settings: 'wght' 200;
+    }
+}
+
+svg.icon_32 {
+    width: 32px;
+    height: 32px;
+
+    @include media('mobile') {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.btn-back {
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: $font;
+    font-weight: 500;
+    color: #B3B3B3;
+	transition: color 0.2s ease-in-out;
+    
+	&:hover {
+        color: #FD633F;
+	}
+	
+	svg {
+        fill: #FD633F;
+		margin-right: 24px;
+        margin-bottom: 3px;
+	}
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main, footer {
+    transition: all .7s ease;
+    
+    &.active {
+        -webkit-filter: blur(0px) invert(0);
+        filter: blur(20px) invert(0);
+    }
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    
+    img {
+        display: block;
+        width: auto;
+        height: 32px;
+
+        @include media('mobile') {
+            height: 20px;
+        }
+    }
+}
+#project,
+#header,
+#footer,
+#main {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @include media('mobile') {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+#main {
+    .projects {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            
+            @include media('mobile') {
+                flex-wrap: wrap;
+            }
+
+            div.col {
+                width: calc(40% - 32px);
+            }
+
+            a.col {
+                width: calc(60% - 32px);
+            }
+
+            .col {
+                padding: 80px 0;
+
+                @include media('mobile') {
+                    width: 100%!important;
+                    padding: 40px 0;
+                }
+                
+                h1 {
+                    margin-bottom: 40px;
+
+                    @include media('mobile') {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                p {
+                    opacity: 0.7;
+                }
+
+                a {
+                    margin-top: 32px;
+                    display: inline-block;
+
+                    @include media('mobile') {
+                        margin-top: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#project {
+    padding-top: 80px;
+
+    .project_description {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        a, h2, p {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        
+        h2, p {
+            margin: 32px 0 16px 0;
+            width: 40%;
+            display: inline-block;
+            
+            @include media('mobile') {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        }
+
+        p {
+            float: right;
+            @include media('mobile') {
+                margin: 8px 0 32px 0;
+            }
+        }
+
+        img {
+            &:first-of-type {
+                margin-top: 64px;
+            }
+            
+            &:not(:last-of-type) {
+                margin-bottom: 80px;
+
+                @include media('mobile') {
+                    margin-bottom: 16px;
+                }
+            }
+
+            &.half {
+                width: calc(50% - 40px);
+                
+                @include media('mobile') {
+                    width: calc(50% - 16px);
+                }
+            }
+        }
+    }
+    
+    .next-project {
+        padding: 80px 0;
+        display: block;
+        text-decoration: none;
+        
+        h2 {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.photo {
+    padding: 80px 0;
+    
+    .container {
+        display: flex;
+
+        @include media('mobile') {
+            padding-top: 160px;
+            flex-wrap: wrap;
+        }
+        
+        .flex {
+            width: 33.333%;
+            flex-direction: column;
+        
+            @include media('mobile') {
+                width: 100%;
+            }
+
+            img {
+                padding: 4px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.about {
+    background-color: #0e0e0e;
+
+    .container {
+        // padding: $spaceHorizontal * 2 $spaceHorizontal;
+
+        .title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 80px 0 160px 0;
+
+            @include media('mobile') {
+                padding: 0 0 80px 0;
+            }
+            
+            .col-2 {
+                width: calc(50% - 32px);
+
+                @include media('mobile') {
+                    width: 100%;
+                }
+
+                h1 {
+                    @include media('mobile') {
+                        padding-bottom: 24px;
+                    }
+                }
+    
+                h1, p {
+                    padding-top: 8px;
+                    color: white;
+                }
+                
+                p {
+                    &:first-of-type {
+                        padding-bottom: 32px;
+                        @include media('mobile') {
+                            padding-bottom: 16px;
+                        }
+                    }
+                }
+            }
+            
+            &.skills {
+                .col-2:last-of-type {   
+                    columns: 200px 2;
+                    column-gap: 32px;
+
+                    @include media('mobile') {
+                        columns: 100px 2;
+                    }
+                }
+    
+                h1,p {
+                    border-top: 1px solid #ccc;
+                }
+                
+                p {
+                    padding: 8px 0 32px 0;
+                }
+            }
+        }
+    }
+}

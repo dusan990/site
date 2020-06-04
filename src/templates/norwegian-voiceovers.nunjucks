@@ -1,0 +1,20 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+<main id="project">
+	<section class="project_description">
+		<a class="btn btn-back" href="index.html">Go Back
+			<svg x="0px" y="0px" width="20.5px" height="12px" viewBox="0 0 20.5 12">
+			<polygon class="st0" points="20.5,5.2 3.1,5.2 7.1,1.1 6,0 0,6 0,6 0,6 0,6 0.1,6.1 6,12 7.1,10.9 3.1,6.8 20.5,6.8 "></polygon></svg>
+		</a>
+		<h2>Norwegian Voiceovers</h2>
+		<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
+		<img>
+		<img src="./assets/norwegian-1.png" alt="">
+	</section>
+
+	<a href="sensilia.html" class="next-project">
+		<h2>Next Project</h2>
+		<p>Sensilia</p>
+	</a>
+</main>
+{% endblock %}

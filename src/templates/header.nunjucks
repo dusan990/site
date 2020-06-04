@@ -1,0 +1,11 @@
+<header id="header">
+	
+	<nav class="nav">
+		<a class="logo" href="index.html">	
+			<img src="./assets/logo-circle.svg">
+		</a>
+		
+		<a class="menu_link" href="index.html">Work</a>
+		<a class="menu_link" href="photography.html">Photography</a>
+	</nav>
+</header>

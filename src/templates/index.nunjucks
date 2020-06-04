@@ -1,0 +1,97 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+<main id="main">
+	<section class="projects">
+		<div class="row">
+			<div class="col">
+				<h1>Norwegian Voiceovers</h2>
+				<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
+				
+				<a href="norwegian-voiceovers.html">View more</a>
+			</div>
+			
+			<a href="norwegian-voiceovers.html" class="col">
+				<img src="./assets/workitem-norw.jpg" alt="">
+			</a>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<h1>Sensilia</h1>
+				<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+
+				<a href="sensilia.html">View more</a>
+			</div>
+			
+			<a href="sensilia.html" class="col">
+				<img src="./assets/sensilia/work-item-sensilia.png" alt="">
+			</a>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<h1>Logofolio</h1>
+				<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+				
+				<a href="norwegian-voiceovers.html">View more</a>
+			</div>
+			
+			<a href="logofolio.html" class="col">
+				<img src="./assets/logo-04.png" alt="">
+			</a>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h1>Random</h1>
+				<p>Work snippets or random UIs I designed in my spare time.</p>
+				
+				<a href="random.html">View more</a>
+			</div>
+			
+			<a href="random.html" class="col">
+				<img src="./assets/workitem-random.png" alt="">
+			</a>
+		</div>
+	</section>
+
+	<!-- <section class="about">
+		<div class="title">
+			<div class="col">
+				<h1>A short biography</h1>
+				<p>A self taught designer with a few coding skills in hand located in Belgrade, Serbia. Curious and passionate about
+					creative field, I pride myself on my ability to learn quickly, my drive that allows me to have a diverse skillset.
+				</p>
+				<p>Being practical, generating mulitple ideas and using a set of technologies and design-thinking strategies are a
+					promise to create a more user-friendly interfaces and strong visuals. Following the brand guidelines, I design high
+					quality visuals that will help people and companies establish their brand visual identity. Having coding skills,
+					brings me an insight into the process, and allows me to create designs that translate well to code.</p>
+			</div>
+		</div>
+
+		<div class="title skills">
+			<div class="col">
+				<p>Skills</p>
+			</div>
+			<div class="col">
+				<p>UI/UX Design</p>
+				<p>Mobile Design</p>
+				<p>Product Design</p>
+				<p>Information Architecture</p>
+				<p>Design Systems</p>
+				<p>Wireframing</p>
+				<p>Prototyping</p>
+				<p>Web Design</p>
+				<p>HTML, CSS</p>
+				<p>Preprocessors</p>
+				<p>Responsive design</p>
+				<p>JS</p>
+				<p>CSS, GSAP animations</p>
+				<p>GIT</p>
+				<p>Blender</p>
+				<p>3D Modeling</p>
+			</div>
+		</div>
+	</section> -->
+</main>
+{% endblock %}
