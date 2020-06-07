@@ -13,7 +13,7 @@ function nunjucks() {
 
 //css
 function style() {
-	return gulp.src('./src/scss/style.scss')
+	return gulp.src('./src/scss/**/*.scss')
     .pipe(sass())
 		.pipe(gulp.dest('./src/css'))
     .pipe(browserSync.stream());
@@ -30,7 +30,8 @@ function watch() {
     }
   });
   gulp.watch('./src/templates/**/*.+(html|nunjucks)', nunjucks);
-	gulp.watch('./src/scss/style.scss', { ignoreInitial: false }, style);
+  gulp.watch('./src/scss/**/*.scss', style);
+	// gulp.watch('./src/scss/style.scss', { ignoreInitial: false }, style);
   gulp.watch('src/*.html').on('change', browserSync.reload);
 }
 

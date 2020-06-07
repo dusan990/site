@@ -348,6 +348,10 @@ textarea {
         @media only screen and (max-width: 799px) {
           #header .nav a:not(:first-of-type) {
             margin-left: 24px; } }
+      #header .nav a:last-of-type svg {
+        vertical-align: middle;
+        height: 14px;
+        width: 14px; }
 
 footer {
   display: flex;

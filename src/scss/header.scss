@@ -3,7 +3,7 @@
     display: block;
     z-index: 10;
     box-sizing: border-box;
-
+    
     .nav {
         display: flex;
         align-items: center;
@@ -20,6 +20,14 @@
                 
                 @include media('mobile') {
                     margin-left: 24px;
+                }
+            }
+
+            &:last-of-type {
+                svg {
+                    vertical-align: middle;
+                    height: 14px;
+                    width: 14px;
                 }
             }
         }
