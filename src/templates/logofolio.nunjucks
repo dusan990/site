@@ -8,11 +8,11 @@
 		</a>
 		<h2>Logofolio</h2>
 		
-		<img src="./assets/logo-01.jpg" alt="">
-		<img src="./assets/logo-02.jpg" alt="">
-		<img src="./assets/logo-03.jpg" alt="">
-		<img src="./assets/logo-04.jpg" alt="">
-		<img src="./assets/logo-05.jpg" alt="">
+		<img src="./assets/logo-01.png" alt="">
+		<img src="./assets/logo-02.png" alt="">
+		<img src="./assets/logo-03.png" alt="">
+		<img src="./assets/logo-04.png" alt="">
+		<img src="./assets/logo-05.png" alt="">
 	</section>
 	
 	<a href="random.html" class="next-project">
