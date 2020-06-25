@@ -1,110 +1,124 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
 <main id="main">
+	<section class="intro">
+		<div class="container">
+			<!-- <h1>Dusan Zivanovic</br>
+				multidisciplinary designer</br>
+				based in Belgrade
+			</h1> -->
+			<h1><span class="light">Hello, I'm Dusan Zivanovic </span>a multidisciplinary designer<span class="light">, who loves photography, with a few </span>coding<span class="light"> skills in hand, living in Belgrade, Serbia.</span></h1>
+		</div>
+	</section>
+	
 	<section class="projects">
-		<div class="row">
-			<div class="col">
-				<h1>Norwegian Voiceovers</h2>
-				<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
-				
-				<a href="norwegian-voiceovers.html">View more</a>
+		<h1 class="title">Recent work</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h3>Norwegian Voiceovers</h3>
+					<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
+				</div>
+				<a href="norwegian-voiceovers.html">
+					<img src="./assets/workitem-norw.jpg" alt="">
+				</a>
 			</div>
-			
-			<a href="norwegian-voiceovers.html" class="col">
-				<img src="./assets/workitem-norw.jpg" alt="">
-			</a>
-		</div>
-		
-		<div class="row">
-			<div class="col">
-				<h1>Sensilia</h1>
-				<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-
-				<a href="sensilia.html">View more</a>
+			<div class="row">
+				<div class="col-4">
+					<h3>Sensilia</h3>
+					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+				</div>
+				<a href="sensilia.html">
+					<img src="./assets/workitem-sensilia.jpg" alt="">
+				</a>
 			</div>
-			
-			<a href="sensilia.html" class="col">
-				<img src="./assets/workitem-sensilia.jpg" alt="">
-			</a>
-		</div>
-
-		<div class="row">
-			<div class="col">
-				<h1>Cleancut</h1>
-				<p>Cleancut is a personal project i'm working on. More information cooming soon.</p>
-
-				<a style="opacity: 0.3;">Cooming soon</a>
+			<div class="row">
+				<div class="col-4">
+					<h3>Cleancut</h3>
+					<p>Cleancut is a personal project i'm working on. More information cooming soon.
+					</p>
+				</div>
+				<a href="">
+					<img src="./assets/workitem-sensilia.jpg" alt="">
+				</a>
 			</div>
-			
-			<a class="col">
-				<img src="./assets/cleancut.png" alt="">
-			</a>
-		</div>
-		
-		<div class="row">
-			<div class="col">
-				<h1>Logofolio</h1>
-				<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-				
-				<a href="logofolio.nunjucks">View more</a>
+			<div class="row">
+				<div class="col-4">
+					<h3>Cleancut</h3>
+					<p>Cleancut is a personal project i'm working on. More information cooming soon.
+					</p>
+				</div>
+				<a href="sensilia.html">
+					<img src="./assets/workitem-sensilia.jpg" alt="">
+				</a>
 			</div>
-			
-			<a href="logofolio.html" class="col">
-				<img src="./assets/logo-04.png" alt="">
-			</a>
-		</div>
-
-		<div class="row">
-			<div class="col">
-				<h1>Random</h1>
-				<p>Work snippets or random UIs I designed in my spare time.</p>
-				
-				<a href="random.html">View more</a>
+			<div class="row">
+				<div class="col-4">
+					<h3>Logofolio</h3>
+					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+				</div>
+				<a>
+					<img src="./assets/cleancut.png" alt="">
+				</a>
 			</div>
-			
-			<a href="random.html" class="col">
-				<img src="./assets/workitem-random.png" alt="">
-			</a>
+			<div class="row">
+				<div class="col-4">
+					<h3>Logofolio</h3>
+					<p>Work snippets or random UIs I designed in my spare time.</p>
+				</div>
+				<a href="logofolio.html">
+					<img src="./assets/logo-04.png" alt="">
+				</a>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<h3>Random</h3>
+					<p>Work snippets or random UIs I designed in my spare time.</p>
+				</div>
+				<a href="logofolio.html">
+					<img src="./assets/logo-04.png" alt="">
+				</a>
+			</div>
 		</div>
 	</section>
 
-	<!-- <section class="about">
-		<div class="title">
-			<div class="col">
-				<h1>A short biography</h1>
-				<p>A self taught designer with a few coding skills in hand located in Belgrade, Serbia. Curious and passionate about
-					creative field, I pride myself on my ability to learn quickly, my drive that allows me to have a diverse skillset.
-				</p>
-				<p>Being practical, generating mulitple ideas and using a set of technologies and design-thinking strategies are a
-					promise to create a more user-friendly interfaces and strong visuals. Following the brand guidelines, I design high
-					quality visuals that will help people and companies establish their brand visual identity. Having coding skills,
-					brings me an insight into the process, and allows me to create designs that translate well to code.</p>
-			</div>
-		</div>
+	<section class="about">
+		<h1 class="title">A short bio</h1>
+		<div class="container">
+			<h3 class="col-10">A self taught designer with a few coding skills in hand located in Belgrade, Serbia. Curious and passionate about
+				creative field, I pride myself on my ability to learn quickly, my drive that allows me to have a diverse skillset.
+			</h3>
+			<div class="row">
+				<div class="col-7">
+					<p>More</p>
+					<p>Being practical, generating mulitple ideas and using a set of technologies and design-thinking strategies are a promise to create a more user-friendly interfaces and strong visuals. Following the brand guidelines, I design high
+						quality visuals that will help people and companies establish their brand visual identity. Having coding skills,
+						brings me an insight into the process, and allows me to create designs that translate well to code.</p>
+				</div>
+				<div class="col-5">
+					<p>Skills</p>
+					<div class="list">
+						<p>UI/UX Design</p>
+						<p>Mobile Design</p>
+						<p>Product Design</p>
+						<p>Information Architecture</p>
+						<p>Design Systems</p>
+						<p>Wireframing</p>
+						<p>Prototyping</p>
+						<p>Web Design</p>
+						<p>Blender</p>
+						<p>3D Modeling</p>
+						<p>HTML, CSS</p>
+						<p>Preprocessors</p>
+						<p>Responsive design</p>
+						<p>JS</p>
+						<p>GIT</p>
+					</div>
 
-		<div class="title skills">
-			<div class="col">
-				<p>Skills</p>
-			</div>
-			<div class="col">
-				<p>UI/UX Design</p>
-				<p>Mobile Design</p>
-				<p>Product Design</p>
-				<p>Information Architecture</p>
-				<p>Design Systems</p>
-				<p>Wireframing</p>
-				<p>Prototyping</p>
-				<p>Web Design</p>
-				<p>HTML, CSS</p>
-				<p>Preprocessors</p>
-				<p>Responsive design</p>
-				<p>JS</p>
-				<p>CSS, GSAP animations</p>
-				<p>GIT</p>
-				<p>Blender</p>
-				<p>3D Modeling</p>
+					<p>Find me on <a href="">LinkedIn</a>.</p>
+				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 </main>
 {% endblock %}

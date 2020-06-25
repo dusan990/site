@@ -8,7 +8,8 @@
 		</a>
 		<h2>Random</h2>
 		<p>Work snippets or random UIs I designed in my spare time.</p>
-
+	</section>
+	<section class="project_description">
 		<img src="./assets/chat-dark.png" alt="">
 		<img src="./assets/chat-light.png" alt="">
 		<img src="./assets/pharmacy.png" alt="">

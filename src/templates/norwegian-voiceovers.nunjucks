@@ -8,7 +8,8 @@
 		</a>
 		<h2>Norwegian Voiceovers</h2>
 		<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
-		<img>
+	</section>
+	<section class="project_description">
 		<img src="./assets/norwegian-1.png" alt="">
 	</section>
 

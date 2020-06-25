@@ -1,9 +1,11 @@
 <footer id="footer">
-	<h1>Got a project in mind?</br> Let’s work together.</h1>
-
-	<a href="mailto:dusanzivanovic990@gmail.com">dusanzivanovic990@gmail.com</a>
-	
-	<a class="logo" href="index.html">	
-		<img src="./assets/logo-circle.svg">
-	</a>
+	<div class="container">
+		<h1>Got a project in mind?</h1>
+		<h3>I'm available for collaboration, let’s work together.</h3>
+		<a href="mailto:dusanzivanovic990@gmail.com">dusanzivanovic990@gmail.com</a>
+		
+		<a class="logo" href="index.html">	
+			<img src="./assets/logo.svg">
+		</a>
+	</div>
 </footer>

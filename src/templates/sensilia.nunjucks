@@ -9,7 +9,8 @@
         </a>
         <h2>Sensilia</h2>
         <p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-        
+    </section>
+	<section class="project_description">
         <img src="./assets/sensilia/Sensilia-01.png" alt="">
         <img src="./assets/sensilia/Sensilia-02.png" alt="">
         <img src="./assets/sensilia/Sensilia-03.png" alt="">

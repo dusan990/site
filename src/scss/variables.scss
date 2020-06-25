@@ -5,6 +5,33 @@
 	font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('../assets/NeueHaasUnica-Light.ttf');
+    src: local('../assets/Neue Haas Unica Light'), local('NeueHaasUnica-Light'),
+        url('../assets/NeueHaasUnica-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('../assets/NeueHaasUnica-Regular.ttf');
+    src: local('../assets/Neue Haas Unica Regular'), local('NeueHaasUnica-Regular'),
+        url('../assets/NeueHaasUnica-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('../assets/NeueHaasUnica-Bold.ttf');
+    src: local('../assets/Neue Haas Unica Bold'), local('NeueHaasUnica-Bold'),
+        url('../assets/NeueHaasUnica-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 $breakpoints: (
 	"mobile": 800px,
 	"tablet": 1024px,
@@ -24,7 +51,9 @@ $breakpoints: (
 }
 
 $gray: #7F7F7F;
+$Neue: 'Neue Haas Unica', sans-serif;
 $font: "Font", sans-serif;
 $Helvetica: "Helvetica", sans-serif;
 $spaceHorizontal: 4vh;
 $spaceVertical: 12vh;
+$border: 1px solid rgba($color: #000000, $alpha: 1);

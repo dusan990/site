@@ -329,17 +329,66 @@ textarea {
   src: local("Font"), url(../assets/Font.otf);
   font-weight: 400; }
 
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Light.ttf");
+  src: local("../assets/Neue Haas Unica Light"), local("NeueHaasUnica-Light"), url("../assets/NeueHaasUnica-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Regular.ttf");
+  src: local("../assets/Neue Haas Unica Regular"), local("NeueHaasUnica-Regular"), url("../assets/NeueHaasUnica-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Bold.ttf");
+  src: local("../assets/Neue Haas Unica Bold"), local("NeueHaasUnica-Bold"), url("../assets/NeueHaasUnica-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: Font;
+  src: local("Font"), url(../assets/Font.otf);
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Light.ttf");
+  src: local("../assets/Neue Haas Unica Light"), local("NeueHaasUnica-Light"), url("../assets/NeueHaasUnica-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Regular.ttf");
+  src: local("../assets/Neue Haas Unica Regular"), local("NeueHaasUnica-Regular"), url("../assets/NeueHaasUnica-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Bold.ttf");
+  src: local("../assets/Neue Haas Unica Bold"), local("NeueHaasUnica-Bold"), url("../assets/NeueHaasUnica-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
 #header {
+  position: relative;
   width: 100%;
   display: block;
   z-index: 10;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-bottom: 1px solid black; }
   #header .nav {
     display: flex;
     align-items: center;
     margin: 0 auto;
     z-index: 601;
-    padding: 32px 0; }
+    padding: 40px; }
     #header .nav a {
       font-size: 0.8rem;
       text-decoration: none; }
@@ -353,20 +402,52 @@ textarea {
         height: 14px;
         width: 14px; }
 
+@font-face {
+  font-family: Font;
+  src: local("Font"), url(../assets/Font.otf);
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Light.ttf");
+  src: local("../assets/Neue Haas Unica Light"), local("NeueHaasUnica-Light"), url("../assets/NeueHaasUnica-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Regular.ttf");
+  src: local("../assets/Neue Haas Unica Regular"), local("NeueHaasUnica-Regular"), url("../assets/NeueHaasUnica-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url("../assets/NeueHaasUnica-Bold.ttf");
+  src: local("../assets/Neue Haas Unica Bold"), local("NeueHaasUnica-Bold"), url("../assets/NeueHaasUnica-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 80px 0;
-  border-top: 1px solid #ccc; }
-  footer h1 {
-    margin-bottom: 32px; }
+  border-top: 1px solid black; }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 0; }
     @media only screen and (max-width: 799px) {
-      footer h1 br {
-        display: none; } }
-  footer > a:first-of-type {
-    text-decoration: underline;
-    margin-bottom: 80px; }
+      footer .container {
+        padding: 80px 0; } }
+    footer .container h1 {
+      margin-bottom: 16px; }
+      @media only screen and (max-width: 799px) {
+        footer .container h1 br {
+          display: none; } }
+    footer .container > a:first-of-type {
+      text-decoration: underline;
+      margin: 24px 0 56px 0; }
+    footer .container .logo {
+      margin: 0 auto; }
 
 html {
   height: -webkit-fill-available; }
@@ -374,7 +455,7 @@ html {
 body {
   margin: 0;
   font-size: 1rem;
-  background-color: #F6F6F6;
+  background-color: #F7F7F8;
   min-height: 100vh;
   min-height: -webkit-fill-available; }
   body.overflow {
@@ -384,35 +465,54 @@ h1, h2, h3 {
   margin: 0; }
 
 h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 2.4rem;
+  font-size: 80px;
   line-height: 1.3;
-  font-weight: 400; }
+  font-weight: 600; }
   @media only screen and (max-width: 799px) {
     h1 {
       font-size: 1.7rem; } }
 
-h2 {
+.light {
+  font-weight: 100; }
+
+.title {
+  width: 100%;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box; }
+
+h1, h2, h3 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.3;
-  font-weight: 400; }
+  line-height: 1.5; }
+
+h2 {
+  font-size: 40px;
+  font-weight: 700; }
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0.7px; }
 
 p {
-  font-family: "Font", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  font-weight: 400;
-  margin: 0; }
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 0.4px; }
   @media only screen and (max-width: 799px) {
     p {
       font-size: 0.9rem; } }
 
 a {
-  font-family: "Font", sans-serif;
+  font-family: 'Inconsolata', monospace;
   text-decoration: underline;
   color: black;
-  font-weight: 800;
+  font-weight: 300;
   font-size: 1rem;
   cursor: pointer; }
   @media only screen and (max-width: 799px) {
@@ -485,54 +585,100 @@ main, footer {
         height: 20px; } }
 
 #project,
-#header,
-#footer,
-#main {
-  max-width: 1240px;
-  margin: 0 auto; }
+.container,
+#footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box; }
   @media only screen and (max-width: 799px) {
     #project,
-    #header,
-    #footer,
-    #main {
+    .container,
+    #footer {
       padding-left: 32px;
       padding-right: 32px; } }
 
-#main .projects .row {
-  display: flex;
-  justify-content: space-between; }
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-bottom: 120px;
+  padding-top: 120px; }
   @media only screen and (max-width: 799px) {
-    #main .projects .row {
-      flex-wrap: wrap; } }
-  #main .projects .row div.col {
-    width: calc(40% - 32px); }
-  #main .projects .row a.col {
-    width: calc(60% - 32px); }
-    #main .projects .row a.col img {
-      transition: all .2s ease-in-out; }
-    #main .projects .row a.col:hover img {
-      transform: scale(0.986); }
-  #main .projects .row .col {
-    margin: 80px 0; }
+    .container {
+      padding: 80px 32px; } }
+
+.row {
+  display: flex;
+  flex-wrap: nowrap; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.col-1 {
+  width: calc(8.33% - 40px); }
+
+.col-2 {
+  width: calc(16.66% - 40px); }
+
+.col-3 {
+  width: calc(25% - 40px); }
+
+.col-4 {
+  width: calc(33.33% - 40px); }
+  @media only screen and (max-width: 799px) {
+    .col-4 {
+      width: 100%; } }
+
+.col-5 {
+  width: calc(41.66% - 40px); }
+
+.col-6 {
+  width: calc(50% - 40px); }
+
+.col-7 {
+  width: calc(58.33% - 40px); }
+
+.col-8 {
+  width: calc(66.66% - 40px); }
+
+.col-9 {
+  width: calc(75% - 40px); }
+
+.col-10 {
+  width: calc(83.33% - 40px); }
+
+.col-11 {
+  width: calc(91.66% - 40px); }
+
+.col-12 {
+  width: calc(100% - 40px); }
+
+[class*="col-"] {
+  box-sizing: border-box; }
+
+#main .projects .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 96px; }
+  @media only screen and (max-width: 799px) {
+    #main .projects .container .row h3 {
+      margin-bottom: 8px; } }
+  #main .projects .container .row a {
+    width: calc(66.66% - 40px);
+    margin-left: auto;
+    display: block;
+    text-decoration: none; }
     @media only screen and (max-width: 799px) {
-      #main .projects .row .col {
-        width: 100% !important;
-        margin: 40px 0; } }
-    #main .projects .row .col h1 {
-      margin-bottom: 40px; }
-      @media only screen and (max-width: 799px) {
-        #main .projects .row .col h1 {
-          margin-bottom: 16px; } }
-    #main .projects .row .col p {
-      opacity: 0.7; }
-    #main .projects .row .col a {
-      margin-top: 32px;
-      display: inline-block; }
-      @media only screen and (max-width: 799px) {
-        #main .projects .row .col a {
-          margin-top: 24px; } }
+      #main .projects .container .row a {
+        width: 100%;
+        margin-top: 32px; } }
 
 #project {
+  max-width: 1240px;
   padding-top: 80px; }
   #project .project_description {
     display: flex;
@@ -544,9 +690,9 @@ main, footer {
     #project .project_description a {
       text-decoration: none; }
     #project .project_description h2, #project .project_description p {
+      width: 66.66%;
       margin: 32px 0 16px 0;
-      width: 40%;
-      display: inline-block; }
+      display: block; }
       @media only screen and (max-width: 799px) {
         #project .project_description h2, #project .project_description p {
           width: 100%;
@@ -593,39 +739,50 @@ main, footer {
         padding: 4px;
         box-sizing: border-box; }
 
-.about {
-  background-color: #0e0e0e; }
-  .about .container .title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 80px 0 160px 0; }
+.intro {
+  height: 90vh;
+  display: flex;
+  align-items: center; }
+  .intro h1 {
+    line-height: 1.6; }
     @media only screen and (max-width: 799px) {
-      .about .container .title {
-        padding: 0 0 80px 0; } }
-    .about .container .title .col-2 {
-      width: calc(50% - 32px); }
-      @media only screen and (max-width: 799px) {
-        .about .container .title .col-2 {
-          width: 100%; } }
-      @media only screen and (max-width: 799px) {
-        .about .container .title .col-2 h1 {
-          padding-bottom: 24px; } }
-      .about .container .title .col-2 h1, .about .container .title .col-2 p {
-        padding-top: 8px;
-        color: white; }
-      .about .container .title .col-2 p:first-of-type {
-        padding-bottom: 32px; }
-        @media only screen and (max-width: 799px) {
-          .about .container .title .col-2 p:first-of-type {
-            padding-bottom: 16px; } }
-    .about .container .title.skills .col-2:last-of-type {
-      columns: 200px 2;
-      column-gap: 32px; }
-      @media only screen and (max-width: 799px) {
-        .about .container .title.skills .col-2:last-of-type {
-          columns: 100px 2; } }
-    .about .container .title.skills h1, .about .container .title.skills p {
-      border-top: 1px solid #ccc; }
-    .about .container .title.skills p {
-      padding: 8px 0 32px 0; }
+      .intro h1 {
+        width: 100%; } }
+
+.about .container .row {
+  justify-content: space-between;
+  padding-top: 56px; }
+  @media only screen and (max-width: 799px) {
+    .about .container .row {
+      flex-wrap: wrap;
+      padding-top: 32px; } }
+  .about .container .row .col-7 > p:first-of-type,
+  .about .container .row .col-5 > p:first-of-type {
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .about .container .row .col-7 h2 {
+    margin-bottom: 24px;
+    float: none; }
+  .about .container .row .col-7 img {
+    max-width: 206px;
+    float: left;
+    padding-right: 20px;
+    filter: grayscale(1); }
+  .about .container .row .col-5 {
+    margin-left: auto; }
+    .about .container .row .col-5 p, .about .container .row .col-5 a {
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.2; }
+      .about .container .row .col-5 p:last-of-type, .about .container .row .col-5 a:last-of-type {
+        margin-top: 32px; }
+    .about .container .row .col-5 .list {
+      column-count: 2; }
+    @media only screen and (max-width: 799px) {
+      .about .container .row .col-5 {
+        width: 100%; }
+        .about .container .row .col-5:last-of-type {
+          padding-bottom: 0; } }
