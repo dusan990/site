@@ -10,7 +10,6 @@ html {
 body {
     margin: 0;
     font-size: 1rem;
-    background-color: #F7F7F8;
     // background-color: #c7c7c7;
 
     min-height: 100vh;
@@ -23,6 +22,7 @@ body {
 
 h1, h2, h3 {
     margin: 0;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 h1 {
@@ -40,18 +40,15 @@ h1 {
 }
 .title {
     width: 100%;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    margin-bottom: 40px;
+    padding: 40px;
     border-bottom: $border;
     box-sizing: border-box;
+    padding-top: 120px;
 }
-h1,h2,h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
+h2,h3 {
     line-height: 1.5;
 }
 h2 {
-    // font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 700;
 }
@@ -63,9 +60,9 @@ h3 {
 }
 
 p {
-    font-family: 'Inconsolata', monospace;
-    font-size: 15px;
-    line-height: 1.6;
+    font-family: $Neue;
+    font-size: 16px;
+    line-height: 1.7;
     font-weight: 300;
     margin: 0;
     letter-spacing: 0.4px;
@@ -76,7 +73,7 @@ p {
 }
 
 a {
-    font-family: 'Inconsolata', monospace;
+    font-family: $Neue;
     text-decoration: underline;
     color: black;
     font-weight: 300;
@@ -96,8 +93,8 @@ button {
 }
 
 img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -141,11 +138,6 @@ svg.icon_32 {
 		margin-right: 24px;
         margin-bottom: 3px;
 	}
-}
-
-img {
-    width: 100%;
-    height: auto;
 }
 
 main, footer {
@@ -232,12 +224,17 @@ main, footer {
 
 #main {
     .projects {
+        // background-color: #F7F7F8;
         .container {
             .row {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding-bottom: 96px;
+                
+                &:last-of-type {
+                    padding-bottom: 0;
+                }
 
                 h3 {
                     @include media('mobile') {
@@ -359,14 +356,20 @@ main, footer {
 }
 
 .intro {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #ccc;
+
+    img {
+        width: 90%;
+        margin: auto;
+    }
     
     // &::before {
     //     content: '';
     //     position: absolute;
-    //     top: -96px;
+    //     top: -113px;
     //     left: 0;
     //     width: 100%;
     //     height: 130%;
@@ -383,6 +386,8 @@ main, footer {
 
     h1 {
         line-height: 1.6;
+        font-size: 120px;
+        font-weight: 400;
 
         @include media('mobile') {
             width: 100%;
@@ -391,7 +396,6 @@ main, footer {
 }
 
 .about {
-
     .container {
         .row {
             justify-content: space-between;
@@ -431,19 +435,17 @@ main, footer {
             .col-5 {
                 margin-left: auto;
 
-                p,a {
-                    margin-bottom: 12px;
-                    font-size: 14px;
-                    line-height: 1.2;
-                    
-                    &:last-of-type {
-                        margin-top: 32px;
-                    }
-                }
-
-
                 .list {          
                     column-count: 2;
+
+                    p {
+                        line-height: 1.7;
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        &:last-of-type {
+                            margin-top: 32px;
+                        }
+                    }
                 }
     
                 @include media('mobile') {

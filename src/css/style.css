@@ -377,18 +377,17 @@ textarea {
   font-style: normal; }
 
 #header {
-  position: relative;
+  position: fixed;
   width: 100%;
   display: block;
   z-index: 10;
-  box-sizing: border-box;
-  border-bottom: 1px solid black; }
+  box-sizing: border-box; }
   #header .nav {
     display: flex;
     align-items: center;
     margin: 0 auto;
     z-index: 601;
-    padding: 40px; }
+    padding: 24px 40px; }
     #header .nav a {
       font-size: 1rem;
       text-decoration: none; }
@@ -455,14 +454,14 @@ html {
 body {
   margin: 0;
   font-size: 1rem;
-  background-color: #F7F7F8;
   min-height: 100vh;
   min-height: -webkit-fill-available; }
   body.overflow {
     overflow: hidden; }
 
 h1, h2, h3 {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Gothic A1', sans-serif; }
 
 h1 {
   font-size: 80px;
@@ -477,14 +476,12 @@ h1 {
 
 .title {
   width: 100%;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  margin-bottom: 40px;
+  padding: 40px;
   border-bottom: 1px solid black;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-top: 120px; }
 
-h1, h2, h3 {
-  font-family: 'IBM Plex Sans', sans-serif;
+h2, h3 {
   line-height: 1.5; }
 
 h2 {
@@ -498,9 +495,9 @@ h3 {
   letter-spacing: 0.7px; }
 
 p {
-  font-family: 'Inconsolata', monospace;
-  font-size: 15px;
-  line-height: 1.6;
+  font-family: "Neue Haas Unica", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
   font-weight: 300;
   margin: 0;
   letter-spacing: 0.4px; }
@@ -509,7 +506,7 @@ p {
       font-size: 0.9rem; } }
 
 a {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Neue Haas Unica", sans-serif;
   text-decoration: underline;
   color: black;
   font-weight: 300;
@@ -526,8 +523,8 @@ button {
   background: none; }
 
 img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   display: block; }
 
 ul {
@@ -561,10 +558,6 @@ svg.icon_32 {
     fill: #FD633F;
     margin-right: 24px;
     margin-bottom: 3px; }
-
-img {
-  width: 100%;
-  height: auto; }
 
 main, footer {
   transition: all .7s ease; }
@@ -664,6 +657,8 @@ main, footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 96px; }
+  #main .projects .container .row:last-of-type {
+    padding-bottom: 0; }
   @media only screen and (max-width: 799px) {
     #main .projects .container .row h3 {
       margin-bottom: 8px; } }
@@ -740,11 +735,17 @@ main, footer {
         box-sizing: border-box; }
 
 .intro {
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: #ccc; }
+  .intro img {
+    width: 90%;
+    margin: auto; }
   .intro h1 {
-    line-height: 1.6; }
+    line-height: 1.6;
+    font-size: 120px;
+    font-weight: 400; }
     @media only screen and (max-width: 799px) {
       .intro h1 {
         width: 100%; } }
@@ -773,14 +774,14 @@ main, footer {
     filter: grayscale(1); }
   .about .container .row .col-5 {
     margin-left: auto; }
-    .about .container .row .col-5 p, .about .container .row .col-5 a {
-      margin-bottom: 12px;
-      font-size: 14px;
-      line-height: 1.2; }
-      .about .container .row .col-5 p:last-of-type, .about .container .row .col-5 a:last-of-type {
-        margin-top: 32px; }
     .about .container .row .col-5 .list {
       column-count: 2; }
+      .about .container .row .col-5 .list p {
+        line-height: 1.7;
+        margin-bottom: 12px;
+        font-size: 14px; }
+        .about .container .row .col-5 .list p:last-of-type {
+          margin-top: 32px; }
     @media only screen and (max-width: 799px) {
       .about .container .row .col-5 {
         width: 100%; }

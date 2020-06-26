@@ -25,18 +25,17 @@
   font-style: normal; }
 
 #header {
-  position: relative;
+  position: fixed;
   width: 100%;
   display: block;
   z-index: 10;
-  box-sizing: border-box;
-  border-bottom: 1px solid black; }
+  box-sizing: border-box; }
   #header .nav {
     display: flex;
     align-items: center;
     margin: 0 auto;
     z-index: 601;
-    padding: 40px; }
+    padding: 24px 40px; }
     #header .nav a {
       font-size: 1rem;
       text-decoration: none; }

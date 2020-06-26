@@ -2,13 +2,7 @@
 {% block content %}
 <main id="main">
 	<section class="intro">
-		<div class="container">
-			<!-- <h1>Dusan Zivanovic</br>
-				multidisciplinary designer</br>
-				based in Belgrade
-			</h1> -->
-			<h1><span class="light">Hello, I'm Dusan Zivanovic </span>a multidisciplinary designer<span class="light">, who loves photography, with a few </span>coding<span class="light"> skills in hand, living in Belgrade, Serbia.</span></h1>
-		</div>
+		<img src="../assets/intro.svg" alt="">
 	</section>
 	
 	<section class="projects">
@@ -39,17 +33,7 @@
 					</p>
 				</div>
 				<a href="">
-					<img src="./assets/workitem-sensilia.jpg" alt="">
-				</a>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<h3>Cleancut</h3>
-					<p>Cleancut is a personal project i'm working on. More information cooming soon.
-					</p>
-				</div>
-				<a href="sensilia.html">
-					<img src="./assets/workitem-sensilia.jpg" alt="">
+					<img src="./assets/cleancut.png" alt="">
 				</a>
 			</div>
 			<div class="row">
@@ -58,15 +42,6 @@
 					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
 				</div>
 				<a>
-					<img src="./assets/cleancut.png" alt="">
-				</a>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<h3>Logofolio</h3>
-					<p>Work snippets or random UIs I designed in my spare time.</p>
-				</div>
-				<a href="logofolio.html">
 					<img src="./assets/logo-04.png" alt="">
 				</a>
 			</div>

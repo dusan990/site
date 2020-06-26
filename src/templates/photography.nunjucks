@@ -1,7 +1,7 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
 <main id="main">
-	<section class="photo">
+	<!-- <section class="photo">
 		<div class="container">
 			<div class="flex">
 				<img src="./assets/photo/tiny/DSCF0290a.jpg" alt="">
@@ -29,6 +29,6 @@
 				<img src="./assets/photo/tiny/DSCF9652a.jpg" alt="">
 			</div>
 		</div>
-	</section>
+	</section> -->
 </main>
 {% endblock %}

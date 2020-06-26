@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body data-barba="wrapper" id="my-scrollbar">
