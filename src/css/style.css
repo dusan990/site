@@ -388,9 +388,15 @@ textarea {
     margin: 0 auto;
     z-index: 601;
     padding: 24px 40px; }
+    @media only screen and (max-width: 799px) {
+      #header .nav {
+        padding: 32px 32px; } }
     #header .nav a {
       font-size: 1rem;
       text-decoration: none; }
+      @media only screen and (max-width: 799px) {
+        #header .nav a {
+          font-size: 14px; } }
       #header .nav a:not(:first-of-type) {
         margin-left: 32px; }
         @media only screen and (max-width: 799px) {
@@ -573,9 +579,6 @@ main, footer {
     display: block;
     width: auto;
     height: 32px; }
-    @media only screen and (max-width: 799px) {
-      .logo img {
-        height: 20px; } }
 
 #project,
 .container,
@@ -599,7 +602,7 @@ main, footer {
   padding-top: 120px; }
   @media only screen and (max-width: 799px) {
     .container {
-      padding: 80px 32px; } }
+      padding: 96px 32px; } }
 
 .row {
   display: flex;
@@ -633,6 +636,9 @@ main, footer {
 
 .col-7 {
   width: calc(58.33% - 40px); }
+  @media only screen and (max-width: 799px) {
+    .col-7 {
+      width: 100%; } }
 
 .col-8 {
   width: calc(66.66% - 40px); }
@@ -642,6 +648,9 @@ main, footer {
 
 .col-10 {
   width: calc(83.33% - 40px); }
+  @media only screen and (max-width: 799px) {
+    .col-10 {
+      width: 100%; } }
 
 .col-11 {
   width: calc(91.66% - 40px); }
@@ -674,7 +683,7 @@ main, footer {
 
 #project {
   max-width: 1240px;
-  padding-top: 80px; }
+  padding-top: 164px; }
   #project .project_description {
     display: flex;
     flex-wrap: wrap;
@@ -764,6 +773,13 @@ main, footer {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px; }
+    @media only screen and (max-width: 799px) {
+      .about .container .row .col-7 > p:first-of-type,
+      .about .container .row .col-5 > p:first-of-type {
+        margin-bottom: 16px; } }
+  @media only screen and (max-width: 799px) {
+    .about .container .row .col-7 {
+      padding-bottom: 32px; } }
   .about .container .row .col-7 h2 {
     margin-bottom: 24px;
     float: none; }
@@ -775,7 +791,8 @@ main, footer {
   .about .container .row .col-5 {
     margin-left: auto; }
     .about .container .row .col-5 .list {
-      column-count: 2; }
+      column-count: 2;
+      margin-bottom: 24px; }
       .about .container .row .col-5 .list p {
         line-height: 1.7;
         margin-bottom: 12px;
