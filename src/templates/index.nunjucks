@@ -1,96 +1,139 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<main id="main">
-	<section class="intro">
+<main id="main" data-barba="container" data-barba-namespace="home">
+	<section class="intro animate">
 		<img src="./assets/intro.svg" alt="">
 	</section>
 	
-	<section class="projects">
-		<h1 class="title">Recent work</h1>
+	<section class="projects animate">
 		<div class="container">
 			<div class="row">
+
 				<div class="col-4">
-					<h3>Norwegian Voiceovers</h3>
-					<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
+					<p class="heading">Recent work</p>
 				</div>
-				<a href="norwegian-voiceovers.html">
-					<img src="./assets/workitem-norw.jpg" alt="">
-				</a>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<h3>Sensilia</h3>
-					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+
+				<div class="column col-8">
+					<div class="column">
+						<a href="norwegian-voiceovers.html">
+							<img src="./assets/workitem-norw.jpg" alt="">
+						</a>
+						<h3>Norwegian Voiceovers</h3>
+						<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
+					</div>
+					
+					<div class="column">
+						<a href="sensilia.html">
+							<img src="./assets/workitem-sensilia.jpg" alt="">
+						</a>
+						<h3>Sensilia</h3>
+						<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+					</div>
+					<div class="column">
+						<a href="cosmos.html">
+							<img src="./assets/cosmos/04.png" alt="">
+						</a>
+						<h3>Cosmos</h3>
+						<p>A freelance website & branding design worked for a client on 99designs. Description cooming soon.
+						</p>
+					</div>
+					<div class="column">
+						<a href="">
+							<img src="./assets/cleancut.png" alt="">
+						</a>
+						<h3>Cleancut</h3>
+						<p>Cleancut is a personal project i'm working on. More information cooming soon.
+						</p>
+					</div>
+					<div class="column">
+						<a href="logofolio.html">
+							<img src="./assets/logo-04.png" alt="">
+						</a>
+						<h3>Logofolio</h3>
+						<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+					</div>
+					<div class="column">
+						<a href="random.html">
+							<img src="./assets/roecketmoon.png" alt="">
+						</a>
+						<h3>Random</h3>
+						<p>Work snippets or random UIs I designed in my spare time.</p>
+					</div>
 				</div>
-				<a href="sensilia.html">
-					<img src="./assets/workitem-sensilia.jpg" alt="">
-				</a>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<h3>Cleancut</h3>
-					<p>Cleancut is a personal project i'm working on. More information cooming soon.
-					</p>
-				</div>
-				<a href="">
-					<img src="./assets/cleancut.png" alt="">
-				</a>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<h3>Logofolio</h3>
-					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-				</div>
-				<a>
-					<img src="./assets/logo-04.png" alt="">
-				</a>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<h3>Random</h3>
-					<p>Work snippets or random UIs I designed in my spare time.</p>
-				</div>
-				<a href="logofolio.html">
-					<img src="./assets/roecketmoon.png" alt="">
-				</a>
 			</div>
 		</div>
+		<!-- <div class="container-wide">
+			<div class="col-4">
+				<p class="heading">Random shots</p>
+			</div>
+
+			<div class="col-12">
+				<img src="./assets/chat-dark.png" alt="">
+				<img src="./assets/chat-light.png" alt="">
+				<img src="./assets/pharmacy.png" alt="">
+				<img src="./assets/panda-insurance02.png" alt="">
+				<img src="./assets/random-1.png" alt="">
+				<img src="./assets/random-2.png" alt="">
+				<img src="./assets/random-3.png" alt="">
+				<img src="./assets/random-4.png" alt="">
+				<img src="./assets/random-5.png" alt="">
+				<img class="half" src="./assets/random-6.png" alt="">
+				<img class="half" src="./assets/random-7.png" alt="">
+				<img class="half" src="./assets/random-8.png" alt="">
+				<img class="half" src="./assets/random-10.png" alt="">
+				<img class="half" src="./assets/car-04-cycles2.png" alt="">
+				<img class="half" src="./assets/roecketmoon.png" alt="">
+			</div>
+		</div> -->
 	</section>
 
-	<section class="about">
-		<h1 class="title">A short bio</h1>
+	<section class="about animate">
 		<div class="container">
-			<h3 class="col-10">A self taught designer with a few coding skills in hand located in Belgrade, Serbia. Curious and passionate about
-				creative field, I pride myself on my ability to learn quickly, my drive that allows me to have a diverse skillset.
-			</h3>
 			<div class="row">
-				<div class="col-7">
-					<p>More</p>
-					<p>Being practical, generating mulitple ideas and using a set of technologies and design-thinking strategies are a promise to create a more user-friendly interfaces and strong visuals. Following the brand guidelines, I design high
-						quality visuals that will help people and companies establish their brand visual identity. Having coding skills,
-						brings me an insight into the process, and allows me to create designs that translate well to code.</p>
+				<div class="col-4">
+					<p class="heading">A short bio</p>
 				</div>
-				<div class="col-5">
-					<p>Skills</p>
-					<div class="list">
-						<p>UI/UX Design</p>
-						<p>Mobile Design</p>
-						<p>Product Design</p>
-						<p>Information Architecture</p>
-						<p>Design Systems</p>
-						<p>Wireframing</p>
-						<p>Prototyping</p>
-						<p>Web Design</p>
-						<p>Blender</p>
-						<p>3D Modeling</p>
-						<p>HTML, CSS</p>
-						<p>Preprocessors</p>
-						<p>Responsive design</p>
-						<p>JS</p>
-						<p>GIT</p>
-					</div>
+				<div class="col-8">
+					<h3>A self taught designer with a few coding skills in hand located in Belgrade, Serbia. Curious and passionate about
+						creative field, I pride myself on my ability to learn quickly and my drive that allows me to have a diverse skillset.
+					</h3>
+					<h3>Being practical, generating mulitple ideas and using a set of technologies and design-thinking strategies are a promise to create a more user-friendly interfaces and strong visuals. Following the brand guidelines, I design high
+						quality visuals that will help people and companies establish their brand visual identity. Having coding skills
+						brings me an insight into the process, and allows me to create designs that translate well to code.</h3>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4">
+					<p class="heading">Skills</p>
+				</div>
+				<div class="col-8">
+					<ul class="list">
+						<li>
+							<p>Tools</p>
+							<p>Blender</p>
+							<p>Figma</p>
+							<p>Affinty Designer</p>
+							<p>Zeplin</p>
+						</li>
+						<li>
+							<p>Skills</p>
+							<p>UI/UX Design</p>
+							<p>Branding</p>
+							<p>Wireframing</p>
+							<p>Prototyping</p>
+							<p>Information Architecture</p>
+							<p>Design Systems</p>
+							<p>HTML, SCSS</p>
+							<p>GSAP</p>
+							<p>Gulp</p>
+							<p>Basic JS</p>
+						</li>
+					</ul>
 
-					<p>Find me on <a href="">LinkedIn</a>.</p>
+					<a href="">LinkedIn</a>
+					<a href="">Dribbble</a>
+					<a href="">Instagram</a>
 				</div>
 			</div>
 		</div>

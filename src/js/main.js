@@ -1,4 +1,4 @@
-//show and hide header intro section
+// Hide show header
 var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop,
 	isVisible = true;
 
@@ -18,25 +18,6 @@ function hide(){
 }
 //END END END
 
-// Infinte txt animation
-var colors = ["#f38630","#6fb936", "#ccc", "#6fb936"];
-
-gsap.set(".box", {
-  backgroundColor: (i) => colors[i % colors.length],
-  x: (i) => i * 50
-});
-
-gsap.to(".box", {
-  duration: 5,
-  ease: "none",
-  x: "+=500", //move each box 500px to right
-  modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 500) //force x value to be between 0 and 500 using modulus
-  },
-  repeat: -1
-});
-//END END END
-
 function refresh() {
 	var newScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -45,16 +26,6 @@ function refresh() {
 	} else if (newScrollTop < 400) {
 		show();
 	}
-	//  else if (newScrollTop < 10) {
-	// 	show()
-	// 	TweenLite.to(".nav", .4, { 
-	// 		backgroundColor: "transparent"
-	// 	}, 0);
-	// }
-	// else if (newScrollTop < currentScrollTop) {
-	// 	show();
-	// 	TweenLite.to(".nav", .4, { backgroundColor: "rgba(241,241,241, 0.7)" }, 0);
-	// }
 }
 window.addEventListener("scroll", refresh, {
 	passive: true
@@ -134,9 +105,60 @@ const footer = document.querySelectorAll('footer')[0];
 // }
 // burgerMotion(burgerMenu);
 
+document.body.addEventListener("mousemove", evt => {
+    const mouseX = evt.clientX;
+    const mouseY = evt.clientY;
+
+    gsap.set(".cursor", {
+		x: mouseX,
+        y: mouseY
+    })
+})
+
+const hoverSpanContainer = document.getElementsByClassName("hoverSpanContainer")[0],
+linkSensilia = document.getElementsByClassName("linkSensilia"),
+linkNorw = document.getElementsByClassName("linkNorw"),
+linkRandom = document.getElementsByClassName("linkRandom"),
+linkLogofolio = document.getElementsByClassName("linkLogofolio"),
+
+hoverLogofolio = document.getElementsByClassName("hoverLogofolio"),
+hoverSensilia = document.getElementsByClassName("hoverSensilia"),
+hoverNorw = document.getElementsByClassName("hoverNorw"),
+hoverRandom = document.getElementsByClassName("hoverRandom");
+
+function hoverText(eleHover, eleImg) {
+	eleHover[0].addEventListener("pointerenter", function (e) {
+		TweenMax.to(eleImg[0], 0.3, { scale: 1, opacity: 1, zIndex: 100 });
+		positionCircle(e);
+	});
+	eleHover[0].addEventListener("pointerleave", function (e) {
+		TweenMax.to(eleImg[0], 0.3, { scale: 0, opacity: 0, zIndex: 0 });
+		positionCircle(e);
+	});
+	eleHover[0].addEventListener("pointermove", function (e) {
+		positionCircle(e);
+	});
+
+	TweenMax.set(eleImg[0], { scale: 0, xPercent: -50, yPercent: -50 });
+
+	// function positionCircle(e) {
+	// 	var relX = e.pageX - hoverSpanContainer.offsetLeft;
+	// 	var relY = e.pageY - hoverSpanContainer.offsetTop;
+	// 	TweenMax.to(eleImg[0], 0.3, { x: relX, y: relY });
+	// }
+}
+
+barba.hooks.afterEnter(() => {
+	window.scrollTo(0, 0);
+	hoverText(linkSensilia, hoverSensilia);
+	hoverText(linkLogofolio, hoverLogofolio);
+	hoverText(linkNorw, hoverNorw);
+	hoverText(linkRandom, hoverRandom);
+});
+
 function leaveAnimation(e) {
 	return new Promise(async resolve => {
-		const elements = e.querySelectorAll("section");
+		const elements = e.querySelectorAll(".animate");
 		await gsap.to(elements, {
 			duration: .5,
 			y: -60,
@@ -148,32 +170,32 @@ function leaveAnimation(e) {
 		resolve()
 	});
 }
-  
+
 function enterAnimation(e) {
 	return new Promise(resolve => {
-		const elements = e.querySelectorAll("section");
+		const elements = e.querySelectorAll(".animate");
 		gsap.from(elements, {
 			duration: .5,
 			y: 60,
 			opacity: 0,
 			ease: "power2.inOut",
-			stagger: 0.3
+			stagger: 0.3,
 		})
 		.then(resolve());
 	});
 }
-barba.hooks.enter(() => {
-	window.scrollTo(0, 0);
-});
+
 barba.init({
 	debug: true,
-	transitions: [
-		{
-			sync: false,
-			leave: ({ current }) =>
-			leaveAnimation(current.container.querySelector("main")),
-			once: ({ next }) => enterAnimation(next.container.querySelector("main")),
-			enter: ({ next }) => enterAnimation(next.container.querySelector("main"))
-		}
-	]
+	preventRunning: true,
+	transitions: [{
+		// sync: false,
+		leave: ({ current }) =>
+			leaveAnimation(current.container),
+
+		enter: ({ next }) =>
+			enterAnimation(next.container),
+	}]
 });
+
+// Scrollbar.initAll();

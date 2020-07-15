@@ -1,20 +1,25 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<main id="project" data-barba="container">
+<main id="project" class="cosmos" data-barba="container">
 	<section class="project_description animate">
 		<div class="container">
 			<div class="col-4">
-				<p class="heading">Norwegian Voiceovers</p>
+				<p class="heading">Cosmos</p>
 			</div>
 			<div class="col-8">
-				<h3>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</h3>
+				<h3>A freelance website & branding design worked for a client on 99designs. Description cooming soon.</h3>
 			</div>
 		</div>
-	</section>
+    </section>
+    
+    <img src="./assets/cosmos/04.png" alt="">
 	
 	<section class="project_gallery">
 		<div class="container-wide">
-			<img src="./assets/norwegian-1.png" alt="">
+			<img src="./assets/cosmos/01.png" alt="">
+			<img src="./assets/cosmos/02.png" alt="">
+			<img src="./assets/cosmos/03.png" alt="">
+			<img src="./assets/cosmos/05.png" alt="">
 
 			<div class="hoverSpanContainer">
 				<p>Next project</p>

@@ -13,9 +13,9 @@ function nunjucks() {
 
 //css
 function style() {
-	return gulp.src('./src/scss/**/*.scss')
+	return gulp.src('./src/scss/style.scss')
     .pipe(sass())
-		.pipe(gulp.dest('./src/css'))
+		.pipe(gulp.dest('./src/dist/'))
     .pipe(browserSync.stream());
 }
 

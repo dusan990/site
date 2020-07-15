@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
-    "gulp-cli": "^2.2.0"
+    "gulp-cli": "^2.3.0",
+    "locomotive-scroll": "^3.5.4",
+    "simple-lightbox": "^2.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-nunjucks-render": "^2.2.3",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-watch-sass": "^1.4.1",
     "nunjucks": "^3.2.1"
   },

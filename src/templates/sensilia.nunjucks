@@ -1,34 +1,58 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<main>
-<main id="project">
-	<section class="project_description">
-        <a class="btn btn-back" href="index.html">Go Back
+<main id="project" class="sensilia" data-barba="container">
+
+<section class="project_description animate">
+    <div class="container">
+        <!-- <a class="btn btn-back" href="index.html">Go Back
             <svg x="0px" y="0px" width="20.5px" height="12px" viewBox="0 0 20.5 12">
             <polygon class="st0" points="20.5,5.2 3.1,5.2 7.1,1.1 6,0 0,6 0,6 0,6 0,6 0.1,6.1 6,12 7.1,10.9 3.1,6.8 20.5,6.8 "></polygon></svg>
-        </a>
-        <h2>Sensilia</h2>
-        <p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-    </section>
-	<section class="project_description">
+        </a> -->
+        <div class="col-4">
+            <p class="heading">Sensilia</p>
+        </div>
+        <div class="col-8">
+            <h3>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</h3>
+        </div>
+    </div>
+</section>
+
+<img class="animate" src="./assets/sensilia/Sensilia-06.png" alt="">
+
+<section class="project_gallery animate">
+    <div class="container-wide">
         <img src="./assets/sensilia/Sensilia-01.png" alt="">
         <img src="./assets/sensilia/Sensilia-02.png" alt="">
         <img src="./assets/sensilia/Sensilia-03.png" alt="">
         <img src="./assets/sensilia/Sensilia-04.png" alt="">
         <img src="./assets/sensilia/Sensilia-05.png" alt="">
-        <img src="./assets/sensilia/Sensilia-06.png" alt="">
-        <img src="./assets/sensilia/Sensilia-07.png" alt="">
-        <img src="./assets/sensilia/Sensilia-08.png" alt="">
+        <img class="inlineImg" src="./assets/sensilia/Sensilia-07.png" alt="">
+        <img class="inlineImg" style="float: right;" src="./assets/sensilia/Sensilia-08.png" alt="">
         <img src="./assets/sensilia/Sensilia-09.png" alt="">
-        <img src="./assets/sensilia/Sensilia-w-01.png" alt="">
-        <img src="./assets/sensilia/Sensilia-w-02.png" alt="">
-        <img src="./assets/sensilia/Sensilia-w-03.png" alt="">
-        <img src="./assets/sensilia/Sensilia-w-04.png" alt="">
-    </section>
+        <div class="deviceBlock">
+            <div class="deviceBlock_inner">
+                <img src="./assets/sensilia/Sensilia-w-01.png" alt="">
+            </div>
+        </div>
 
-    <a href="logofolio.html" class="next-project">
-        <h2>Next Project</h2>
-        <p>Logofolio</p>
-    </a>
+        <img src="./assets/sensilia/Sensilia-w-02.png" alt="">
+        
+        <div class="deviceBlock">
+            <div class="deviceBlock_inner">
+                <img src="./assets/sensilia/Sensilia-w-03.png" alt="">
+            </div>
+        </div>
+        
+        <img src="./assets/sensilia/Sensilia-w-04.png" alt="">
+        
+        <div class="hoverSpanContainer">
+            <p>Next project</p>
+            <a href="logofolio.html" class="linkLogofolio">
+                Logofolio
+            </a>
+        </div>
+    </div>
+</section>
+
 </main>
 {% endblock %}

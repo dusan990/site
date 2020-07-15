@@ -1,15 +1,30 @@
-@import 'variables';
 footer {
     border-top: $border;
+    background-color: #fff;
     
     .container {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        // text-align: center;
         padding: 120px 0;
-    
+        
         @include media('mobile') {
             padding: 80px 0;
+        }
+
+        h1,h3,a {
+            color:black;
+        }
+
+        .logo {
+            svg {
+                width: 32px;
+                height: 32px;
+                
+                path {
+                    stroke: black;
+                }
+            }
         }
         
         h1 {
@@ -25,10 +40,6 @@ footer {
         > a:first-of-type {
             text-decoration: underline;
             margin: 24px 0 56px 0;
-        }
-        
-        .logo {
-            margin: 0 auto;
         }
     }
 }
