@@ -2,58 +2,58 @@
 {% block content %}
 <main id="main" data-barba="container" data-barba-namespace="home">
 	<section class="intro animate">
-		<img src="./assets/intro.svg" alt="">
+		<img src="./assets/intro-bg.svg">
 	</section>
 	
 	<section class="projects animate">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-4">
+				<div class="col-4 animate">
 					<p class="heading">Recent work</p>
 				</div>
 
 				<div class="column col-8">
-					<div class="column">
-						<a href="norwegian-voiceovers.html">
+					<div class="column animate">
+						<a class="navLink" href="norwegian-voiceovers.html">
 							<img src="./assets/workitem-norw.jpg" alt="">
 						</a>
 						<h3>Norwegian Voiceovers</h3>
 						<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
 					</div>
 					
-					<div class="column">
-						<a href="sensilia.html">
+					<div class="column animate">
+						<a class="navLink" href="sensilia.html">
 							<img src="./assets/workitem-sensilia.jpg" alt="">
 						</a>
 						<h3>Sensilia</h3>
 						<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
 					</div>
-					<div class="column">
-						<a href="cosmos.html">
+					<div class="column animate">
+						<a class="navLink" href="cosmos.html">
 							<img src="./assets/cosmos/04.png" alt="">
 						</a>
 						<h3>Cosmos</h3>
 						<p>A freelance website & branding design worked for a client on 99designs. Description cooming soon.
 						</p>
 					</div>
-					<div class="column">
-						<a href="">
+					<div class="column animate">
+						<a class="navLink" href="">
 							<img src="./assets/cleancut.png" alt="">
 						</a>
 						<h3>Cleancut</h3>
 						<p>Cleancut is a personal project i'm working on. More information cooming soon.
 						</p>
 					</div>
-					<div class="column">
-						<a href="logofolio.html">
+					<div class="column animate">
+						<a class="navLink" href="logofolio.html">
 							<img src="./assets/logo-04.png" alt="">
 						</a>
 						<h3>Logofolio</h3>
 						<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
 					</div>
-					<div class="column">
-						<a href="random.html">
+					<div class="column animate">
+						<a class="navLink" href="random.html">
 							<img src="./assets/roecketmoon.png" alt="">
 						</a>
 						<h3>Random</h3>
@@ -62,29 +62,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="container-wide">
-			<div class="col-4">
-				<p class="heading">Random shots</p>
-			</div>
-
-			<div class="col-12">
-				<img src="./assets/chat-dark.png" alt="">
-				<img src="./assets/chat-light.png" alt="">
-				<img src="./assets/pharmacy.png" alt="">
-				<img src="./assets/panda-insurance02.png" alt="">
-				<img src="./assets/random-1.png" alt="">
-				<img src="./assets/random-2.png" alt="">
-				<img src="./assets/random-3.png" alt="">
-				<img src="./assets/random-4.png" alt="">
-				<img src="./assets/random-5.png" alt="">
-				<img class="half" src="./assets/random-6.png" alt="">
-				<img class="half" src="./assets/random-7.png" alt="">
-				<img class="half" src="./assets/random-8.png" alt="">
-				<img class="half" src="./assets/random-10.png" alt="">
-				<img class="half" src="./assets/car-04-cycles2.png" alt="">
-				<img class="half" src="./assets/roecketmoon.png" alt="">
-			</div>
-		</div> -->
 	</section>
 
 	<section class="about animate">

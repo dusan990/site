@@ -1,6 +1,6 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-<main id="project" data-barba="container">
+<main id="project" class="logofolio" data-barba="container">
 
 	<section class="project_description animate">
 		<div class="container">

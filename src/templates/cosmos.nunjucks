@@ -12,9 +12,9 @@
 		</div>
     </section>
     
-    <img src="./assets/cosmos/04.png" alt="">
+    <img class="animate" src="./assets/cosmos/04.png" alt="">
 	
-	<section class="project_gallery">
+	<section class="project_gallery animate">
 		<div class="container-wide">
 			<img src="./assets/cosmos/01.png" alt="">
 			<img src="./assets/cosmos/02.png" alt="">

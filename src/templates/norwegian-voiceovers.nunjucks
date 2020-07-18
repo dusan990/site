@@ -12,7 +12,7 @@
 		</div>
 	</section>
 	
-	<section class="project_gallery">
+	<section class="project_gallery animate">
 		<div class="container-wide">
 			<img src="./assets/norwegian-1.png" alt="">
 

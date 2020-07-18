@@ -10,7 +10,7 @@
 </head>
 
 <body data-barba="wrapper" >
-	{% include "../templates/cursor.nunjucks" %}
+	<!-- {% include "../templates/cursor.nunjucks" %} -->
 	{% include "../templates/header.nunjucks" %}
 	{% block content %}
 	{% endblock %}
