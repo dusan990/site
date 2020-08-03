@@ -1,7 +1,6 @@
 #header {
     position: fixed;
-    width: 100%;
-    display: block;
+    width: calc(100% - 40px);
     z-index: 101;
     box-sizing: border-box;
     // border-bottom: $border;
@@ -9,14 +8,9 @@
     .nav {
         position: relative;
         display: flex;
-        align-items: center;
-        margin: 0 auto;
-        padding: 24px 40px;
+        justify-content: space-between;
+        padding: 20px;
         z-index: 105;
-
-        @include media('mobile') {
-            padding: 20px 20px;
-        }
         
         a {
             font-size: 1rem;
@@ -150,7 +144,7 @@
                     }
                     
                     &:hover {
-                        color: #6a0bf0;
+                        color: #f5212e;
                         opacity: 1;
                     }
                 }
@@ -163,10 +157,10 @@
 
     &__contact {
         a {
-            color: #6a0bf0;
+            color: #f5212e;
 
             &:visited {
-                color: #6a0bf0;
+                color: #f5212e;
             }
         }
     }

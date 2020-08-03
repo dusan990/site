@@ -3,62 +3,57 @@
 <main id="main" data-barba="container" data-barba-namespace="home">
 	<section class="intro animate">
 		<img src="./assets/intro-bg.svg">
+		<div class="intro_pattern"></div>
 	</section>
 	
 	<section class="projects animate">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-4 animate">
-					<p class="heading">Recent work</p>
+				<div class="column animate">
+					<a class="navLink" href="sensilia.html">
+						<img src="./assets/workitem-sensilia.jpg" alt="">
+					</a>
+					<h3>Sensilia</h3>
+					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
 				</div>
 
-				<div class="column col-8">
-					<div class="column animate">
-						<a class="navLink" href="norwegian-voiceovers.html">
-							<img src="./assets/workitem-norw.jpg" alt="">
-						</a>
-						<h3>Norwegian Voiceovers</h3>
-						<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
-					</div>
-					
-					<div class="column animate">
-						<a class="navLink" href="sensilia.html">
-							<img src="./assets/workitem-sensilia.jpg" alt="">
-						</a>
-						<h3>Sensilia</h3>
-						<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-					</div>
-					<div class="column animate">
-						<a class="navLink" href="cosmos.html">
-							<img src="./assets/cosmos/04.png" alt="">
-						</a>
-						<h3>Cosmos</h3>
-						<p>A freelance website & branding design worked for a client on 99designs. Description cooming soon.
-						</p>
-					</div>
-					<div class="column animate">
-						<a class="navLink" href="">
-							<img src="./assets/cleancut.png" alt="">
-						</a>
-						<h3>Cleancut</h3>
-						<p>Cleancut is a personal project i'm working on. More information cooming soon.
-						</p>
-					</div>
-					<div class="column animate">
-						<a class="navLink" href="logofolio.html">
-							<img src="./assets/logo-04.png" alt="">
-						</a>
-						<h3>Logofolio</h3>
-						<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
-					</div>
-					<div class="column animate">
-						<a class="navLink" href="random.html">
-							<img src="./assets/roecketmoon.png" alt="">
-						</a>
-						<h3>Random</h3>
-						<p>Work snippets or random UIs I designed in my spare time.</p>
-					</div>
+				<div class="col-6 animate">
+					<a class="navLink" href="norwegian-voiceovers.html">
+						<img src="./assets/workitem-norw.jpg" alt="">
+					</a>
+					<h3>Norwegian Voiceovers</h3>
+					<p>Voiceovers.no is a voiceover database. On voiceovers users should be able to filter, search and listen thousands of voiceovers and be able to download and save tracks.</p>
+				</div>
+				<div class="col-6 animate">
+					<a class="navLink" href="">
+						<img src="./assets/cleancut.png" alt="">
+					</a>
+					<h3>Cleancut</h3>
+					<p>Cleancut is a personal project i'm working on. More information cooming soon.
+					</p>
+				</div>
+				<div class="column animate">
+					<a class="navLink" href="cosmos.html">
+						<img src="./assets/cosmos/04.png" alt="">
+					</a>
+					<h3>Cosmos</h3>
+					<p>A freelance website & branding design worked for a client on 99designs. Description cooming soon.
+					</p>
+				</div>
+				<div class="col-6 animate">
+					<a class="navLink" href="logofolio.html">
+						<img src="./assets/logo-04.png" alt="">
+					</a>
+					<h3>Logofolio</h3>
+					<p>Senislia is a top quality CBD oil, the first wellness routine with natural cannabis extracts.</p>
+				</div>
+				<div class="col-6 animate">
+					<a class="navLink" href="random.html">
+						<img src="./assets/roecketmoon.png" alt="">
+					</a>
+					<h3>Random</h3>
+					<p>Work snippets or random UIs I designed in my spare time.</p>
 				</div>
 			</div>
 		</div>
